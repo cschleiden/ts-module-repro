@@ -1,3 +1,3 @@
-import { Component } from "./component";
+import { Component } from "./component/index";
 
 const x = new Component();

@@ -1,9 +1,8 @@
-Compiler output:
+Problem: 
 
-```
-tsc
-consumer.ts:1:27 - error TS2307: Cannot find module './component'.
+`types.d.ts` is not compiled to a module, yet `index.js` tries to export from it:
 
-1 import { Component } from "./component";
-                            ~~~~~~~~~~~~~
+```js
+export * from "./types";
+export * from "./component";
 ```
