@@ -1,7 +1,7 @@
 export interface IComponent {
 }
 
-export enum Test {
+export const enum Test {
     Foo,
     Bar
 }
